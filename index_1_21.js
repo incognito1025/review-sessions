@@ -12,15 +12,15 @@ function ifItsInTheArray(arr, target) {
     
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
-            return target;
+            return target;      //target return the element from the array
         } else {
             
         }
     }
-return undefined
+return undefined; // other solution return.arr.find((num)) => num === target);
 }
 
-const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // this is my array (arr)
 const targetVal = 5;
 
 console.log(ifItsInTheArray(numbers, 2));
@@ -29,14 +29,27 @@ console.log(ifItsInTheArray(numbers, 4));
 console.log(ifItsInTheArray(numbers, 3));
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
-/*
+
 function firstNumThatsBigger(arr) {
 
     for (let i = 0; i < arr.length; i++) {
-        if ( arr[i] )
+        let num = arr[i];
+        if (num > 14) {
+            return num;
+        } else {
+
+        }
     }
+    return undefined;
 }
 
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(firstNumThatsBigger(numbers));
+console.log(firstNumThatsBigger(arr));
+console.log(firstNumThatsBigger(arr));
+console.log(firstNumThatsBigger(arr));
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 
