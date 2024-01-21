@@ -14,21 +14,28 @@ function ifItsInTheArray(arr, target) {
         if (arr[i] === target) {
             return target;
         } else {
-            return undefined;
+            
         }
     }
+return undefined
 }
 
 const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const targetVal = 5
+const targetVal = 5;
 
-console.log(ifItsInTheArray(8, 2));
-console.log(ifItsInTheArray(0, 5));
-console.log(ifItsInTheArray(5, 4));
-console.log(ifItsInTheArray(3, 3));
+console.log(ifItsInTheArray(numbers, 2));
+console.log(ifItsInTheArray(numbers, 5));
+console.log(ifItsInTheArray(numbers, 4));
+console.log(ifItsInTheArray(numbers, 3));
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
+/*
+function firstNumThatsBigger(arr) {
 
+    for (let i = 0; i < arr.length; i++) {
+        if ( arr[i] )
+    }
+}
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
