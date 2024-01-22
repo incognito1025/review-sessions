@@ -20,20 +20,20 @@ function ifItsInTheArray(arr, target) {
 return undefined; // other solution return.arr.find((num)) => num === target);
 }
 
-const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // this is my array (arr)
-const targetVal = 5;
+//const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // this is my array (arr)
+//const targetVal = 5;
 
-console.log(ifItsInTheArray(numbers, 2));
-console.log(ifItsInTheArray(numbers, 5));
-console.log(ifItsInTheArray(numbers, 4));
-console.log(ifItsInTheArray(numbers, 3));
+//console.log(ifItsInTheArray(numbers, 2));
+// console.log(ifItsInTheArray(numbers, 5));
+// console.log(ifItsInTheArray(numbers, 4));
+// console.log(ifItsInTheArray(numbers, 3));
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
 
 function firstNumThatsBigger(arr) {
-
+    
     for (let i = 0; i < arr.length; i++) {
-        let num = arr[i];
+        let num = arr[i];  // for (let num of arr)
         if (num > 14) {
             return num;
         } else {
@@ -43,16 +43,38 @@ function firstNumThatsBigger(arr) {
     return undefined;
 }
 
+// console.log(firstNumThatsBigger([14, 98, 0]));  // Code didn't run because of syntax error here //output 98
+// console.log(firstNumThatsBigger([11, 5, 19]));  //Code didn't run because of syntax error here //output 19
+// console.log(firstNumThatsBigger([58, 23, 3]));   //Code didn't run because of syntax error here  // output 58
+// console.log(firstNumThatsBigger([6, 3, 7]));    //Code didn't run because of syntax error here  // output undefined
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-console.log(firstNumThatsBigger(numbers));
-console.log(firstNumThatsBigger(arr));
-console.log(firstNumThatsBigger(arr));
-console.log(firstNumThatsBigger(arr));
+/*
+Second solution:
+return.arr.find((num) => num > 14;
+*/
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
 
+    //Param arr - strings ["one", "dog", "cat", "robert" ]
+    //return first string w/ length greater than 4
+    // return undefined if no such string isfound
+
+    function returnString(arr) {
+       
+        for (let i = 0; i < arr.length; i++) {
+            let firstString = arr[i];
+            if (firstString.length > 4) {
+                return firstString;
+            } else {
+
+            }
+        }
+        return undefined;
+    }
+
+    console.log(returnString(["dog", "hairbrush", "bottle"]));
+    console.log(returnString(["id", "ego", "super ego"]));
+    console.log(returnString(["tea", "coffee", "expresso"]));
 
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
@@ -73,12 +95,5 @@ console.log(firstNumThatsBigger(arr));
  name: "Robert"
 }
 */
-
-
-
-
-
-
-
 
 
