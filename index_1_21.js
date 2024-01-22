@@ -43,10 +43,10 @@ function firstNumThatsBigger(arr) {
     return undefined;
 }
 
-// console.log(firstNumThatsBigger([14, 98, 0]));  // Code didn't run because of syntax error here //output 98
-// console.log(firstNumThatsBigger([11, 5, 19]));  //Code didn't run because of syntax error here //output 19
-// console.log(firstNumThatsBigger([58, 23, 3]));   //Code didn't run because of syntax error here  // output 58
-// console.log(firstNumThatsBigger([6, 3, 7]));    //Code didn't run because of syntax error here  // output undefined
+// console.log(firstNumThatsBigger([14, 98, 0]));  // Code didn't run at first because of syntax error here //output 98
+// console.log(firstNumThatsBigger([11, 5, 19]));  //Code didn't run at first because of syntax error here //output 19
+// console.log(firstNumThatsBigger([58, 23, 3]));   //Code didn't run at first because of syntax error here  // output 58
+// console.log(firstNumThatsBigger([6, 3, 7]));    //Code didn't run at first because of syntax error here  // output undefined
 
 /*
 Second solution:
@@ -57,7 +57,7 @@ return.arr.find((num) => num > 14;
 
     //Param arr - strings ["one", "dog", "cat", "robert" ]
     //return first string w/ length greater than 4
-    // return undefined if no such string isfound
+    // return undefined if no such string is found
 
     function returnString(arr) {
        
@@ -69,12 +69,12 @@ return.arr.find((num) => num > 14;
 
             }
         }
-        return undefined;
+        return undefined;``
     }
 
-    console.log(returnString(["dog", "hairbrush", "bottle"]));
-    console.log(returnString(["id", "ego", "super ego"]));
-    console.log(returnString(["tea", "coffee", "expresso"]));
+    // console.log(returnString(["dog", "hairbrush", "bottle"]));
+    // console.log(returnString(["id", "ego", "super ego"]));
+    // console.log(returnString(["tea", "coffee", "expresso"]));
 
 
 // Given an array of Objects and a target id return the first object that matches the id or undefined if no such object is found
@@ -87,6 +87,45 @@ return.arr.find((num) => num > 14;
  eyeColor: "green"
 }
 */
+
+//param: array of objects: arr
+//param: string: target id
+//return first object that matches id
+//return undefined if no object is found
+
+function matchID(arr, targetId) {
+    for (let i = 0; i < arr.length; i++) { 
+        if (arr[i].id === targetId) {
+            return arr[i];
+        }  
+    }
+    return undefined;
+}
+
+const arr = [
+
+ id: "Y42C_a",
+ name: "Robert",
+ occupation: "Chef",
+ eyeColor: "green"
+}
+];
+const arr = [
+
+    id: "Y49C_a",
+    name: "James",
+    occupation: "Sweeper",
+    eyeColor: "blue"
+   }
+   ];
+
+const targetId = "Y42C_a";
+const firstObject = matchID(arr, targetId);
+
+console.log(firstObject)
+
+
+
 
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
