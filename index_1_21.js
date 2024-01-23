@@ -88,7 +88,7 @@ return.arr.find((num) => num > 14;
 }
 */   
 
-//param: array of objects: arr
+//param: array objects: arr
 //param: string: target id
 //return first object that matches id
 //return undefined if no object is found
@@ -101,7 +101,7 @@ function matchID(arr, targetId) {
     }
     return undefined;
 }
-
+/*
 const arrayOfObjects = [
     { id: "Y42C_a", name: "Robert", occupation: "Chef", eyeColor: "green" },
     { id: "Z17B_b", name: "Alice", occupation: "Engineer", eyeColor: "brown" },
@@ -119,16 +119,7 @@ const targetId = "T64H_g";
 
 console.log(matchID(arrayOfObjects, targetId));
 
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
@@ -140,6 +131,8 @@ console.log(matchID(arrayOfObjects, targetId));
 {
  name: "Robert"
 }
+*/
+/* 
 */
 
 function findObjectName(arr, targetId) {
@@ -180,7 +173,7 @@ console.log(result2); // Should print: { name: "Alice" }
 const result3 = findObjectName(arrayOfObjects, "Z99D_c");
 console.log(result3); // Should print: undefined
 
-/*
+ /*
 Function - Independent Study
 
 // Define/declaring function -param is passed to argument
@@ -437,3 +430,4 @@ function foo(bar) {
 
     }
 }
+*/
