@@ -136,8 +136,8 @@ console.log(matchID(arrayOfObjects, targetId));
 */
 
 function findObjectName(arr, targetId) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].name === targetId) {
+    for (let i = 0; i < arr.length; i++) { 
+        if (arr[i].id === targetId) {  //look into this
             const objectName = {name: arr[i].name}
             return objectName;
         }
@@ -174,6 +174,18 @@ const result3 = findObjectName(arrayOfObjects, "Z99D_c");
 console.log(result3); // Should print: undefined
 
  /*
+
+Niki's Personal Feedback on 10.21.2023 7:00pm. 
+Review functions!
+Don't remember basic rules of functions as well I thought. The function questions are a bit disjointed here - not sure if it's just my understanding or if its just the question set up.  Spent more time trying to interpret the problem than working on the solution.  Spend the next few hours revising functions basic.  Got up to Callback.. must work on the advanced stuff too. 
+
+Review arrays!
+
+Review Objects!!!!
+
+Back to alnighters! review arrays labs
+
+
 Function - Independent Study
 
 // Define/declaring function -param is passed to argument
