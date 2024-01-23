@@ -81,12 +81,12 @@ return.arr.find((num) => num > 14;
 // Expected Structure of a SINGLE object - 
 /*
 {
- id: "Y42C_b",
+ id: "Y42C_a",
  name: "Robert",
  occupation: "Chef",
  eyeColor: "green"
 }
-*/
+*/   
 
 //param: array of objects: arr
 //param: string: target id
@@ -102,27 +102,34 @@ function matchID(arr, targetId) {
     return undefined;
 }
 
-// const arr = [
+const arrayOfObjects = [
+    { id: "Y42C_a", name: "Robert", occupation: "Chef", eyeColor: "green" },
+    { id: "Z17B_b", name: "Alice", occupation: "Engineer", eyeColor: "brown" },
+    { id: "X91D_c", name: "David", occupation: "Artist", eyeColor: "blue" },
+    { id: "W28E_d", name: "Sophia", occupation: "Doctor", eyeColor: "hazel" },
+    { id: "V53F_e", name: "Michael", occupation: "Teacher", eyeColor: "gray" },
+    { id: "U79G_f", name: "Emily", occupation: "Scientist", eyeColor: "amber" },
+    { id: "T64H_g", name: "Daniel", occupation: "Pilot", eyeColor: "green" },
+    { id: "S46I_h", name: "Olivia", occupation: "Writer", eyeColor: "blue" },
+    { id: "R82J_i", name: "Ethan", occupation: "Athlete", eyeColor: "brown" },
+    { id: "Q29K_j", name: "Ava", occupation: "Musician", eyeColor: "green" },
+];
 
-//  id: "Y42C_a",
-//  name: "Robert",
-//  occupation: "Chef",
-//  eyeColor: "green"
-// }
-// ];
-// const arr = [
+const targetId = "T64H_g";
 
-//     id: "Y49C_a",
-//     name: "James",
-//     occupation: "Sweeper",
-//     eyeColor: "blue"
-//    }
-//    ];
+console.log(matchID(arrayOfObjects, targetId));
 
-// const targetId = "Y42C_a";
-// const firstObject = matchID(arr, targetId);
 
-// console.log(firstObject);
+
+
+
+
+
+
+
+
+
+
 
 
 
