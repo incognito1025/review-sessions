@@ -15,7 +15,6 @@
 // console.log(capitalizedSentence("cap every word."));
 
 
-/
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
@@ -25,7 +24,7 @@
 
 function formatGreeting(individual) {
     
-    return `Hello ${individual.firstName}, have a great day at your job as a $(individual.occupation}.`
+    return `Hello ${individual.firstName} ${individual.lastName}, have a great day at your job as a $(individual.occupation}.`
 }
 
 const john = {
@@ -44,13 +43,14 @@ const john = {
   
   console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day at your job as a Teacher")
   
-  // 3.----------------------------------
-  // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
   
-  /* Example Object
-  {
-    id: "Tfjso_4M"
-    firstName: "John",
-    lastName: "Klaus",
-    occupation: "Carpenter"
-  }
+//   // 3.----------------------------------
+//   // Write a function that takes an array of objects and a targetId and returns a formatted string. Each object in the array will have the same structure as the objects from the previous question plus an id. Use chatGPT to create an array of 10 such objects.
+  
+//   /* Example Object
+//   {
+//     id: "Tfjso_4M"
+//     firstName: "John",
+//     lastName: "Klaus",
+//     occupation: "Carpenter"
+//   }
