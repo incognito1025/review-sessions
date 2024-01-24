@@ -2,15 +2,14 @@
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
 function everyWordCapitalized(string) {
-    
+    const sentence = "Let's study now!";
+    const words = sentence.split(" ");
 
     for (let i = 0; i < words.length; i++) {
         words[i].toUpperCase() + words[i].substr(1);
     }
 words.join(" ");
 }
-const sentence = "Let's study now!";
-const words = sentence.split(" ");
 
 const capitalizedSentence = everyWordCapitalized(string);
 console.log(capitalizedSentence("cap every word."));
