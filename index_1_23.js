@@ -1,25 +1,32 @@
-// 1.----------------------------------
-// Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
+// // 1.----------------------------------
+// // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
 
-function everyWordCapitalized(string) {
-    const sentence = "Let's study now!";
-    const words = sentence.split(" ");
+// function everyWordCapitalized(string) {
+//     const sentence = "Let's study now!";
+//     const words = sentence.split(" ");
 
-    for (let i = 0; i < words.length; i++) {
-        words[i].toUpperCase() + words[i].substr(1);
-    }
-words.join(" ");
-}
+//     for (let i = 0; i < words.length; i++) {
+//         words[i].toUpperCase() + words[i].substr(1);
+//     }
+// words.join(" ");
+// }
 
-const capitalizedSentence = everyWordCapitalized(string);
-console.log(capitalizedSentence("cap every word."));
+// const capitalizedSentence = everyWordCapitalized(string);
+// console.log(capitalizedSentence("cap every word."));
 
 
-/*
+/
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
 // This is the format of the object - 
 
+//parameter = object. let's call it `individual`
+//How do we key into man object. syntax object name . key. dot notation or bracket notation
+
+function formatGreeting(individual) {
+    
+    return `Hello ${individual.firstName}, have a great day at your job as a $(individual.occupation}.`
+}
 
 const john = {
     firstName: "John",
