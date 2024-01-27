@@ -1,5 +1,18 @@
  // 1. Write a function that takes in an array and returns an object where each element in the array is a key, and the values are the number of times each element appears in the array -
 
+ function returnAnObject(arr) {
+    
+    const obj = {};
+
+    //iterate through the array
+    for (const element of array) {
+    obj [element] = (obj[element] || 0) + 1;
+ }
+ return obj;
+
+}
+  
+//pseudocode , iterate thought the array. If the element is not a key in the obj object, initialize with i, otherwise increment through the existing count.
 // YOUR CODE HERE
 
 // Example:
@@ -43,83 +56,82 @@ const person = {
 //   e. Update the name of the head of marketing to "Johann Marketer"
 
 const companyOrganizationalStructure = {
-    companyName: "TechCorp",
-    CEO: {
-      name: "John CEO",
-      office: {
-        location: "Floor 10, Building A",
-        employees: {
-          executiveAssistant: {
-            name: "Alice Executive",
-            desk: "A101",
-          },
+  companyName: "TechCorp",
+  CEO: {
+    name: "John CEO",
+    office: {
+      location: "Floor 10, Building A",
+      employees: {
+        executiveAssistant: {
+          name: "Alice Executive",
+          desk: "A101",
         },
       },
     },
-    departments: {
-      development: {
-        head: {
-          name: "Bob Head",
-          office: {
-            location: "Floor 8, Building B",
-            employees: {
-              softwareEngineer1: {
-                name: "Charlie Engineer",
-                desk: "B801",
-              },
-              softwareEngineer2: {
-                name: "David Coder",
-                desk: "B802",
-              },
+  },
+  departments: {
+    development: {
+      head: {
+        name: "Bob Head",
+        office: {
+          location: "Floor 8, Building B",
+          employees: {
+            softwareEngineer1: {
+              name: "Charlie Engineer",
+              desk: "B801",
             },
-          },
-        },
-      },
-      marketing: {
-        head: {
-          name: "Eva Marketer",
-          office: {
-            location: "Floor 6, Building C",
-            employees: {
-              marketingSpecialist1: {
-                name: "Frank Specialist",
-                desk: "C601",
-              },
-              marketingSpecialist2: {
-                name: "Grace Promoter",
-                desk: "C602",
-              },
+            softwareEngineer2: {
+              name: "David Coder",
+              desk: "B802",
             },
           },
         },
       },
     },
-  };
-  
-  // YOUR CODE HERE
-  
-  // ------------------------------------------------------------------------
-  
-  // 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
-  
-  const key = "name";
-  const value = "Roberto Robertson"
-  
-  // 6. Write a function that takes an object as it's only parameter and logs each property to the console. The function ONLY LOGS
-  
-  // YOUR CODE HERE
-  
-  // ------------------------------------------------------------------------
-  
-  // 7. Write a function that takes two objects and checks if they have the same values. HINT: use the (for.. in..) loop
-  
-  // YOUR CODE HERE
-  
-  // ------------------------------------------------------------------------
-  
-  
-  
-  
-  
-  
-  
+    marketing: {
+      head: {
+        name: "Eva Marketer",
+        office: {
+          location: "Floor 6, Building C",
+          employees: {
+            marketingSpecialist1: {
+              name: "Frank Specialist",
+              desk: "C601",
+            },
+            marketingSpecialist2: {
+              name: "Grace Promoter",
+              desk: "C602",
+            },
+          },
+        },
+      },
+    },
+  },
+};
+
+// YOUR CODE HERE
+
+// ------------------------------------------------------------------------
+
+// 5. Given the following variables, create a new object. the key variable should be the key and the value variable should be it's corresponding value. You have to use the variables!
+
+const key = "name";
+const value = "Roberto Robertson"
+
+// 6. Write a function that takes an object as it's only parameter and logs each property to the console. The function ONLY LOGS
+
+// YOUR CODE HERE
+
+// ------------------------------------------------------------------------
+
+// 7. Write a function that takes two objects and checks if they have the same values. HINT: use the (for.. in..) loop
+
+// YOUR CODE HERE
+
+// ------------------------------------------------------------------------
+
+
+
+
+
+
