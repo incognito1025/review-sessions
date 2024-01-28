@@ -10,7 +10,7 @@ Steps to use the acc pattern
     */
 
 //Find the max value in an array -
-
+/*
 function findMax(arr) {
     return Math.max(...arr);
 }
@@ -46,8 +46,8 @@ function replacedByLength(arr) {
     return arrOfLength;
 }
 
-const result = replaceByLength(["Hi", "cat"]);
-console.log(result);
+//const result = replaceByLength(["Hi", "cat"]);
+//console.log(result);
 
 // or 
 
@@ -68,7 +68,7 @@ function getLength(arr) {
     // return stringLengths;
 }
 
-console.log(getLengths (["a", "bc", "def", ]));
+//console.log(getLengths (["a", "bc", "def", ]));
 
 
 
@@ -106,8 +106,8 @@ function returnFiveChar(arr) {
   }
   
   // Example usage
-  const result = returnFiveChar(["apple", "banana", "kiwi", "grape", "orange"]);
-  console.log(result); // Output: ["banana", "orange"]
+  //const result = returnFiveChar(["apple", "banana", "kiwi", "grape", "orange"]);
+  //console.log(result); // Output: ["banana", "orange"]
   
 
     //or Native Array Methods solution
@@ -133,8 +133,8 @@ for (let i = 0;  i < arr.length; i++) {
 return strFiveLengths;
 }
 
-const result = newArrLength(["apple", "banana", "kiwi", "grape", "orange"]);
-console.log(result); // Output: [6, 6, 7]
+//const result = newArrLength(["apple", "banana", "kiwi", "grape", "orange"]);
+//console.log(result); // Output: [6, 6, 7]
 
 //accumulator
 
@@ -153,11 +153,66 @@ function newArrLength(arr) {
 
 function newArrLength(arr) {
 
-    return arr.filter(str => str.length > 5).map(str =. str.length);
+    return arr.filter(str => str.length > 5).map(str => str.length);
 
 }
 
+/*
+
+function myMap(arr, callback) {
+    const newArr = [];
+
+    for (let el of arr) {
+        newArr.push(callback(el))
+    }
+        //return newArr;
+}
+
+function myFilter(arr, callback) {
+    const newArr = [];
+}
+
+//.filter filters, .map transforms
+
+*/
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
+
+function sumOfEvenNumbers(arr) {
+    let sum = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+console.log(sumOfEvenNumbers([2, 4, 5]));
+
+
+
+//accumulator
+
+function sumOfEvenNumbers(arr) {
+    let sum = 0;
+
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            sum += num;
+        }
+    }
+    return sum;
+}
+
+
+
+//native array method
+
+function sumofEvenNumbers(arr) {
+    return arr.reduce((sum, num) => (num % 2 === 0) ? sum + num : sum, 0);
+}
+
 
 // 5. Write a function that takes an array of numbers and returns the min num
 
