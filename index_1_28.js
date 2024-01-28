@@ -141,12 +141,20 @@ console.log(result); // Output: [6, 6, 7]
 function newArrLength(arr) {
     const strFiveLengths =[];
 
-    for (let length of arr) {
+    for (let str of arr) {
         if (arrStr.length > 5) {
             allFiveLengths.push(str)
         }
     }
     return strFiveLengths;
+}
+
+//native array method
+
+function newArrLength(arr) {
+
+    return arr.filter(str => str.length > 5).map(str =. str.length);
+
 }
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
