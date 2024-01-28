@@ -25,6 +25,29 @@ function replacedByLength(arr) {
 const result = replaceByLength(["Hi", "cat"]);
 console.log(result);
 
+// or 
+
+//PLease keep in mind str is arr[i];
+
+function getLength(arr) {
+    const lengths = [];
+
+    for (let str of a arr) {
+        lengths.push(str.length);
+    }
+
+    return lengths;
+
+    //or Native Array Methods solution
+
+    // const stringLengths = arr.map((el) => el.length);
+    // return stringLengths;
+}
+
+console.log(getLengths (["a", "bc", "def", ]));
+
+
+
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
