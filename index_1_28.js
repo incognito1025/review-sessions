@@ -75,7 +75,7 @@ console.log(getLengths (["a", "bc", "def", ]));
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
-function returnsFiveChar(arr) {
+function returnFiveChar(arr) {
     const arrFiveChar = [];
     
     for (let i = 0; i < arr.length; i++) {
@@ -119,6 +119,35 @@ function returnFiveChar(arr) {
 
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
+
+function newArrLength(arr) {
+    
+const strFiveLengths = [];
+
+for (let i = 0;  i < arr.length; i++) {
+    const arrStr = arr[i];
+    if(arrStr.length > 5) {
+        allFiveLengths.push(arrStr.length);
+    }
+}
+return strFiveLengths;
+}
+
+const result = newArrLength(["apple", "banana", "kiwi", "grape", "orange"]);
+console.log(result); // Output: [6, 6, 7]
+
+//accumulator
+
+function newArrLength(arr) {
+    const strFiveLengths =[];
+
+    for (let length of arr) {
+        if (arrStr.length > 5) {
+            allFiveLengths.push(str)
+        }
+    }
+    return strFiveLengths;
+}
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
